@@ -42,6 +42,18 @@
       padding: 6px 12px;
       text-transform: uppercase;
     }
+    .lc-pill-soft {
+      display: inline-block;
+      background: #e7f4f2;
+      color: #0f4a46;
+      font-size: 12px;
+      letter-spacing: 0.6px;
+      font-weight: 700;
+      border-radius: 999px;
+      padding: 6px 12px;
+      text-transform: uppercase;
+      border: 1px solid #b9e0da;
+    }
     .lc-card {
       border: 1px solid var(--lc-card-border);
       border-radius: 14px;
@@ -98,6 +110,41 @@
       background: #ffffff;
       padding: 20px;
     }
+    .lc-shot-wrap {
+      border: 1px solid var(--lc-card-border);
+      border-radius: 14px;
+      background: #ffffff;
+      padding: 16px;
+      box-shadow: 0 8px 18px rgba(20, 30, 40, 0.06);
+    }
+    .lc-shot-wrap img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      border: 1px solid #e8ecef;
+    }
+    .lc-shot-title {
+      font-size: 20px;
+      font-weight: 700;
+      color: #0f3a37;
+      margin-bottom: 8px;
+    }
+    .lc-shot-text {
+      color: var(--lc-text-muted);
+      margin-bottom: 14px;
+    }
+    .lc-badge-step {
+      display: inline-block;
+      background: #e7f4f2;
+      color: #0f766e;
+      border-radius: 999px;
+      padding: 4px 10px;
+      font-size: 12px;
+      font-weight: 700;
+      margin-bottom: 10px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
     @media (max-width: 767px) {
       .lc-title {
         font-size: 32px;
@@ -111,7 +158,11 @@
     <section class="lc-hero mb-4">
       <div class="row align-items-center g-3">
         <div class="col-lg-8">
-          <span class="lc-pill">Odoo 19 Ready</span>
+          <div class="d-flex flex-wrap gap-2 align-items-center">
+            <span class="lc-pill">Odoo 19 Ready</span>
+            <span class="lc-pill-soft">Community</span>
+            <span class="lc-pill-soft">Enterprise</span>
+          </div>
           <h1 class="lc-title">Line Color</h1>
           <p class="lc-subtitle">Highlight duplicate product lines instantly in list views to reduce review mistakes and speed up operations.</p>
         </div>
@@ -175,17 +226,54 @@
     </section>
 
     <section class="lc-card mb-4">
+      <h3 class="lc-h2">How It Works (Output First)</h3>
+      <p class="mb-0" style="color: var(--lc-text-muted);">
+        Best practice for users is to first see the visual result, then understand where to configure it.
+        The sequence below follows that flow.
+      </p>
+    </section>
+
+    <section class="lc-shot-wrap mb-4">
+      <span class="lc-badge-step">Step 1 - Result</span>
+      <div class="lc-shot-title">Delivery Lines Highlighted Automatically</div>
+      <p class="lc-shot-text">Duplicate product lines in Delivery operations are grouped with color backgrounds for quick visual verification.</p>
+      <img src="./assets/screenshots/delivery_view.png" alt="Delivery View Colored Lines" loading="lazy" />
+    </section>
+
+    <section class="lc-shot-wrap mb-4">
+      <span class="lc-badge-step">Step 2 - Result</span>
+      <div class="lc-shot-title">Invoice Lines Also Follow the Same Color Logic</div>
+      <p class="lc-shot-text">The same duplicate-line detection can be applied to invoice lines when enabled in scope settings.</p>
+      <img src="./assets/screenshots/invoice_view.png" alt="Invoice View Colored Lines" loading="lazy" />
+    </section>
+
+    <section class="lc-shot-wrap mb-4">
+      <span class="lc-badge-step">Step 3 - Navigation</span>
+      <div class="lc-shot-title">Open Line Color Menus from Settings</div>
+      <p class="lc-shot-text">The module exposes a dedicated Line Color menu in Settings so administrators can manage everything from one place.</p>
+      <img src="./assets/screenshots/menu_items.png" alt="Line Color Menu Items" loading="lazy" />
+    </section>
+
+    <section class="lc-shot-wrap mb-4">
+      <span class="lc-badge-step">Step 4 - Configuration</span>
+      <div class="lc-shot-title">Define Your Color Palette</div>
+      <p class="lc-shot-text">Set sequence and color values (background, border, hover) to match your team preference and readability needs.</p>
+      <img src="./assets/screenshots/line_colors_conf.png" alt="Line Colors Configuration" loading="lazy" />
+    </section>
+
+    <section class="lc-shot-wrap mb-4">
+      <span class="lc-badge-step">Step 5 - Configuration</span>
+      <div class="lc-shot-title">Control Scope by Document Type</div>
+      <p class="lc-shot-text">Enable or disable coloring for Sales, Purchase, Invoice, and each inventory operation type independently.</p>
+      <img src="./assets/screenshots/scope_config.png" alt="Line Color Scope Configuration" loading="lazy" />
+    </section>
+
+    <section class="lc-card mb-4">
       <h3 class="lc-h2">Compatibility</h3>
       <ul class="mb-0">
         <li>Odoo 19 Community and Enterprise.</li>
         <li>Designed for backend list/tree rendering behavior in the web client.</li>
       </ul>
-    </section>
-
-    <section class="lc-note mb-4">
-      <strong>Note:</strong> You can optionally add screenshots in
-      <code>static/description/assets/screenshots</code>
-      and reference them here for richer marketplace presentation.
     </section>
 
     <section class="lc-footer">
