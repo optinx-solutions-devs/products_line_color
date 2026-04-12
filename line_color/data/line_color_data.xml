@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo noupdate="1">
+    <record id="line_color_1" model="line.color">
+        <field name="name">Color 1</field>
+        <field name="sequence">10</field>
+        <field name="background_color">rgba(255, 193, 7, 0.22)</field>
+        <field name="border_color">#ffc107</field>
+        <field name="hover_color">rgba(255, 193, 7, 0.3)</field>
+        <field name="active" eval="True"/>
+    </record>
+
+    <record id="line_color_2" model="line.color">
+        <field name="name">Color 2</field>
+        <field name="sequence">20</field>
+        <field name="background_color">rgba(13, 110, 253, 0.14)</field>
+        <field name="border_color">#0d6efd</field>
+        <field name="hover_color">rgba(13, 110, 253, 0.2)</field>
+        <field name="active" eval="True"/>
+    </record>
+
+    <record id="line_color_3" model="line.color">
+        <field name="name">Color 3</field>
+        <field name="sequence">30</field>
+        <field name="background_color">rgba(25, 135, 84, 0.16)</field>
+        <field name="border_color">#198754</field>
+        <field name="hover_color">rgba(25, 135, 84, 0.23)</field>
+        <field name="active" eval="True"/>
+    </record>
+
+    <record id="line_color_4" model="line.color">
+        <field name="name">Color 4</field>
+        <field name="sequence">40</field>
+        <field name="background_color">rgba(111, 66, 193, 0.14)</field>
+        <field name="border_color">#6f42c1</field>
+        <field name="hover_color">rgba(111, 66, 193, 0.21)</field>
+        <field name="active" eval="True"/>
+    </record>
+
+    <record id="line_color_5" model="line.color">
+        <field name="name">Color 5</field>
+        <field name="sequence">50</field>
+        <field name="background_color">rgba(220, 53, 69, 0.13)</field>
+        <field name="border_color">#dc3545</field>
+        <field name="hover_color">rgba(220, 53, 69, 0.2)</field>
+        <field name="active" eval="True"/>
+    </record>
+
+    <record id="line_color_6" model="line.color">
+        <field name="name">Color 6</field>
+        <field name="sequence">60</field>
+        <field name="background_color">rgba(253, 126, 20, 0.17)</field>
+        <field name="border_color">#fd7e14</field>
+        <field name="hover_color">rgba(253, 126, 20, 0.24)</field>
+        <field name="active" eval="True"/>
+    </record>
+
+    <record id="line_color_7" model="line.color">
+        <field name="name">Color 7</field>
+        <field name="sequence">70</field>
+        <field name="background_color">rgba(32, 201, 151, 0.17)</field>
+        <field name="border_color">#20c997</field>
+        <field name="hover_color">rgba(32, 201, 151, 0.25)</field>
+        <field name="active" eval="True"/>
+    </record>
+
+    <record id="line_color_8" model="line.color">
+        <field name="name">Color 8</field>
+        <field name="sequence">80</field>
+        <field name="background_color">rgba(108, 117, 125, 0.16)</field>
+        <field name="border_color">#6c757d</field>
+        <field name="hover_color">rgba(108, 117, 125, 0.24)</field>
+        <field name="active" eval="True"/>
+    </record>
+</odoo>

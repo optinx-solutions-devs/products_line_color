@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo noupdate="1">
+    <record id="line_color_default_scope" model="line.color.config">
+        <field name="name">Default Scope</field>
+        <field name="active" eval="True"/>
+        <field name="apply_sale" eval="False"/>
+        <field name="apply_purchase" eval="False"/>
+        <field name="apply_invoice" eval="False"/>
+        <field name="apply_picking_outgoing" eval="True"/>
+        <field name="apply_picking_incoming" eval="False"/>
+        <field name="apply_picking_internal" eval="False"/>
+    </record>
+</odoo>
