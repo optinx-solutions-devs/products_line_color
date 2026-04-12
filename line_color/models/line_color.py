@@ -30,6 +30,14 @@ class LineColorConfig(models.Model):
     apply_picking_incoming = fields.Boolean(string="Receipts", default=False)
     apply_picking_internal = fields.Boolean(string="Internal Transfers", default=False)
 
+    @api.model_create_multi
+    def create(self, vals_list):
+        # During module updates, XML data may create a new default scope while an old one is still active.
+        # Keep installation/update safe by deactivating existing active records first.
+        if any(vals.get("active", True) for vals in vals_list):
+            self.search([("active", "=", True)]).write({"active": False})
+        return super().create(vals_list)
+
     @api.constrains("active")
     def _check_single_active_config(self):
         if any(record.active for record in self):

@@ -1,5 +1,5 @@
 {
-    "name": "Line Color",
+    "name": "Products Line Color",
     "summary": "Highlight duplicate product lines with configurable document scope",
     "description": """
 Line Color improves readability in list views by automatically coloring duplicate product lines.
@@ -11,7 +11,7 @@ Main features:
 - Works in modern Odoo web client list views.
 """,
     "version": "18.0.1.0.0",
-    "category": "Sales/Sales",
+    "category": "Settings/Technical",
     "author": "Optindev",
     "maintainer": "optindev",
     #"website": "https://www.optinsolutions.com",
@@ -19,7 +19,7 @@ Main features:
     "price": 9.5,
     "currency": "USD",
     "license": "LGPL-3",
-    #"depends": ["sale_stock"],
+    "depends": ["base"],
     "data": [
         "security/ir.model.access.csv",
         "data/line_color_data.xml",
