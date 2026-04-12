@@ -12,7 +12,7 @@ Main features:
 """,
     "version": "18.0.1.0.0",
     "category": "Settings/Technical",
-    "author": "Optindev",
+    "author": "Optin Solutions",
     "maintainer": "optindev",
     #"website": "https://www.optinsolutions.com",
     "support": "optinassist@gmail.com",
