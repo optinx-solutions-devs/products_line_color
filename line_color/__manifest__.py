@@ -1,8 +1,8 @@
 {
-    "name": "Line Color",
+    "name": "Products Line Color",
     "summary": "Highlight duplicate product lines with configurable document scope",
     "description": """
-    Line Color improves readability in list views by automatically coloring duplicate product lines.
+    Products Line Color improves readability in list views by automatically coloring duplicate product lines.
 
     Main features:
     - Detect duplicate product lines and group them with consistent colors.
