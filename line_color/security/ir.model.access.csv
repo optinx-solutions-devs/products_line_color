@@ -1,0 +1,7 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_line_color_manager,line.color manager,model_line_color,stock.group_stock_manager,1,1,1,1
+access_line_color_sale_manager,line.color sale manager,model_line_color,sales_team.group_sale_manager,1,1,1,1
+access_line_color_stock_user,line.color stock user,model_line_color,stock.group_stock_user,1,0,0,0
+access_line_color_config_stock_manager,line.color.config stock manager,model_line_color_config,stock.group_stock_manager,1,1,1,1
+access_line_color_config_sale_manager,line.color.config sale manager,model_line_color_config,sales_team.group_sale_manager,1,1,1,1
+access_line_color_config_internal_user,line.color.config internal user,model_line_color_config,base.group_user,1,0,0,0
