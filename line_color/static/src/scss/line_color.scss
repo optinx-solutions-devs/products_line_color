@@ -1,0 +1,50 @@
+// Map format: Group Number -> (Background Color, Border Accent Color, Hover Background Color)
+$dlc-colors: (
+    1: (rgba(255, 193, 7, 0.22), #ffc107, rgba(255, 193, 7, 0.3)),
+    2: (rgba(13, 110, 253, 0.14), #0d6efd, rgba(13, 110, 253, 0.2)),
+    3: (rgba(25, 135, 84, 0.16), #198754, rgba(25, 135, 84, 0.23)),
+    4: (rgba(111, 66, 193, 0.14), #6f42c1, rgba(111, 66, 193, 0.21)),
+    5: (rgba(220, 53, 69, 0.13), #dc3545, rgba(220, 53, 69, 0.2)),
+    6: (rgba(253, 126, 20, 0.17), #fd7e14, rgba(253, 126, 20, 0.24)),
+    7: (rgba(32, 201, 151, 0.17), #20c997, rgba(32, 201, 151, 0.25)),
+    8: (rgba(108, 117, 125, 0.16), #6c757d, rgba(108, 117, 125, 0.24))
+);
+
+:root {
+    --o-dlc-color-count: #{length($dlc-colors)};
+}
+
+.o_list_renderer .o_data_row.o_dlc_row {
+    @each $i, $c in $dlc-colors {
+
+        // Apply normal background and border
+        &.o_dlc_group_#{$i}>.o_data_cell {
+            background-color: nth($c, 1) !important;
+            transition: background-color 0.15s ease;
+
+            &:first-of-type {
+                box-shadow: inset 4px 0 0 nth($c, 2) !important;
+            }
+        }
+
+        &.o_dlc_group_#{$i}>.o_list_record_remove {
+            background-color: nth($c, 1) !important;
+            transition: background-color 0.15s ease;
+
+            button {
+                color: #000000 !important;
+            }
+        }
+
+        // Apply hover / selected background
+        &.o_dlc_group_#{$i}:hover>.o_data_cell,
+        &.o_dlc_group_#{$i}.o_list_record_selected>.o_data_cell {
+            background-color: nth($c, 3) !important;
+        }
+
+        &.o_dlc_group_#{$i}:hover>.o_list_record_remove,
+        &.o_dlc_group_#{$i}.o_list_record_selected>.o_list_record_remove {
+            background-color: nth($c, 3) !important;
+        }
+    }
+}

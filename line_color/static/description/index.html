@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Line Color</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+<body style="margin:0; padding:0; background:#fbfaf7; font-family:Verdana, Geneva, sans-serif; color:#2f3a44;">
+  <div style="max-width:1060px; margin:0 auto; padding:18px;">
+    <div style="background:#ffffff; border:1px solid #d9d8d0; border-radius:6px; padding:18px; margin-bottom:14px;">
+      <div style="margin-bottom:8px;">
+        <span style="display:inline-block; background:#355c7d; color:#fff; padding:5px 10px; font-size:11px; font-weight:700; border-radius:3px; margin-right:5px;">ODOO 16 READY</span>
+        <span style="display:inline-block; background:#eef3f8; color:#29445b; padding:5px 10px; font-size:11px; font-weight:700; border:1px solid #cfdbe6; border-radius:3px; margin-right:5px;">COMMUNITY</span>
+        <span style="display:inline-block; background:#eef3f8; color:#29445b; padding:5px 10px; font-size:11px; font-weight:700; border:1px solid #cfdbe6; border-radius:3px;">ENTERPRISE</span>
+      </div>
+      <div style="display:flex; justify-content:space-between; align-items:center; gap:14px; flex-wrap:wrap;">
+        <div style="flex:1; min-width:240px;">
+          <h1 style="margin:0 0 8px; font-size:42px; color:#22313f;">Line Color</h1>
+          <p style="margin:0; font-size:18px; color:#5d6c79; line-height:1.45;">Old-school stable module to color duplicate lines for faster review and fewer mistakes.</p>
+        </div>
+        <img src="./icon.png" alt="Line Color" style="width:82px; height:82px; border:1px solid #d2dfe8; border-radius:8px;" />
+      </div>
+    </div>
+
+    <div class="mb-4 bg-white" style="border:1px solid #d9d8d0; border-radius:6px; overflow:hidden;">
+      <ul class="nav nav-tabs justify-content-center bg-white py-2" style="border-bottom:1px solid #d9d8d0;">
+        <li class="nav-item"><a class="nav-link active" data-bs-toggle="tab" href="#overview" style="color:#29445b; font-weight:600;">Screenshots</a></li>
+        <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#feature" style="color:#29445b; font-weight:600;">Features</a></li>
+        <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#faq" style="color:#29445b; font-weight:600;">FAQs</a></li>
+        <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#releases" style="color:#29445b; font-weight:600;">Releases</a></li>
+      </ul>
+      <div class="tab-content p-md-3 p-2 py-3">
+        <div class="tab-pane fade show active" id="overview">
+          <div style="border:1px solid #e4e3dc; border-radius:6px; padding:12px; margin-bottom:10px; background:#fff;">
+            <strong style="font-size:22px; color:#22313f;">Step 1 - Delivery Result</strong>
+            <p style="margin:8px 0 12px; color:#5d6c79; font-size:16px;">Delivery lines with duplicate products are grouped by color.</p>
+            <img src="./assets/screenshots/delivery_view.png" alt="Delivery" style="width:100%; border:1px solid #e7e6df; border-radius:6px;" />
+          </div>
+          <div style="border:1px solid #e4e3dc; border-radius:6px; padding:12px; margin-bottom:10px; background:#fff;">
+            <strong style="font-size:22px; color:#22313f;">Step 2 - Invoice Result</strong>
+            <p style="margin:8px 0 12px; color:#5d6c79; font-size:16px;">Invoice lines can use the same color logic.</p>
+            <img src="./assets/screenshots/invoice_view.png" alt="Invoice" style="width:100%; border:1px solid #e7e6df; border-radius:6px;" />
+          </div>
+          <div style="border:1px solid #e4e3dc; border-radius:6px; padding:12px; margin-bottom:10px; background:#fff;">
+            <strong style="font-size:22px; color:#22313f;">Step 3 - Menu Location</strong>
+            <p style="margin:8px 0 12px; color:#5d6c79; font-size:16px;">Open from Settings -> Line Color.</p>
+            <img src="./assets/screenshots/menu_items.png" alt="Menu" style="width:100%; border:1px solid #e7e6df; border-radius:6px;" />
+          </div>
+          <div style="border:1px solid #e4e3dc; border-radius:6px; padding:12px; margin-bottom:10px; background:#fff;">
+            <strong style="font-size:22px; color:#22313f;">Step 4 - Palette Setup</strong>
+            <p style="margin:8px 0 12px; color:#5d6c79; font-size:16px;">Define background, border, and hover colors.</p>
+            <img src="./assets/screenshots/line_colors_conf.png" alt="Palette" style="width:100%; border:1px solid #e7e6df; border-radius:6px;" />
+          </div>
+          <div style="border:1px solid #e4e3dc; border-radius:6px; padding:12px; background:#fff;">
+            <strong style="font-size:22px; color:#22313f;">Step 5 - Scope Setup</strong>
+            <p style="margin:8px 0 12px; color:#5d6c79; font-size:16px;">Enable the exact document types you need.</p>
+            <img src="./assets/screenshots/scope_config.png" alt="Scope" style="width:100%; border:1px solid #e7e6df; border-radius:6px;" />
+          </div>
+        </div>
+
+        <div class="tab-pane fade" id="feature">
+          <div style="border:1px solid #e4e3dc; border-radius:6px; padding:14px; background:#fff;">
+            <ul style="margin:0; padding-left:20px; color:#4f5f6d; line-height:1.7; font-size:16px;">
+              <li>Reliable duplicate detection in line lists.</li>
+              <li>Simple palette management.</li>
+              <li>Per-document scope control.</li>
+              <li>Works for Sales, Purchase, Invoice, and Stock operations.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="tab-pane fade" id="faq">
+          <div style="border:1px solid #e4e3dc; border-radius:6px; padding:14px; margin-bottom:10px; background:#fff;"><strong>Q:</strong> Is CE/EE supported?<br><strong>A:</strong> Yes, Odoo 16 Community and Enterprise are supported.</div>
+          <div style="border:1px solid #e4e3dc; border-radius:6px; padding:14px; background:#fff;"><strong>Q:</strong> Can I limit it to selected operations?<br><strong>A:</strong> Yes, use Line Color Scope settings.</div>
+        </div>
+
+        <div class="tab-pane fade" id="releases">
+          <div style="border:1px solid #e4e3dc; border-radius:6px; padding:14px; margin-bottom:10px; background:#fff;"><strong>v16.0.1.0.0</strong><ul style="margin-top:8px;"><li>Odoo 16 package release.</li><li>Classic UI-friendly line color configuration.</li></ul></div>
+          <div style="border:1px solid #e4e3dc; border-radius:6px; padding:14px; background:#fff;">Support: <a href="mailto:optinassist@gmail.com">optinassist@gmail.com</a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
