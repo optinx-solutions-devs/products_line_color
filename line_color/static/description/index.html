@@ -9,11 +9,13 @@
   <div style="max-width:1080px; margin:0 auto; padding:18px;">
 
     <div style="background:#ffffff; border:1px solid #dde5ea; border-radius:12px; padding:20px; margin-bottom:16px;">
-      <div style="margin-bottom:12px;">
-        <span style="display:inline-block; background:#0f766e; color:#ffffff; font-size:12px; font-weight:700; border-radius:999px; padding:6px 10px; margin-right:6px;">ODOO 19 READY</span>
-        <span style="display:inline-block; background:#e7f4f2; color:#0f4a46; font-size:12px; font-weight:700; border-radius:999px; border:1px solid #b9e0da; padding:6px 10px; margin-right:6px;">COMMUNITY</span>
-        <span style="display:inline-block; background:#e7f4f2; color:#0f4a46; font-size:12px; font-weight:700; border-radius:999px; border:1px solid #b9e0da; padding:6px 10px;">ENTERPRISE</span>
-      </div>
+      <table cellpadding="0" cellspacing="0" border="0" style="margin-bottom:12px; border-collapse:separate; border-spacing:6px 0;">
+        <tr>
+          <td bgcolor="#0f766e" style="background:#0f766e; color:#ffffff; font-size:12px; font-weight:700; border-radius:999px; padding:6px 10px;">ODOO 19 READY</td>
+          <td bgcolor="#e7f4f2" style="background:#e7f4f2; color:#0f4a46; font-size:12px; font-weight:700; border-radius:999px; padding:6px 10px; border:1px solid #b9e0da;">COMMUNITY</td>
+          <td bgcolor="#e7f4f2" style="background:#e7f4f2; color:#0f4a46; font-size:12px; font-weight:700; border-radius:999px; padding:6px 10px; border:1px solid #b9e0da;">ENTERPRISE</td>
+        </tr>
+      </table>
       <div style="display:flex; align-items:center; justify-content:space-between; gap:16px; flex-wrap:wrap;">
         <div style="flex:1; min-width:260px;">
           <h1 style="margin:0 0 10px; font-size:54px; line-height:1.05; color:#111827;">Line Color</h1>
@@ -49,48 +51,73 @@
       <p style="margin:0; font-size:20px; line-height:1.45; color:#5b6470;">First see the actual result in documents, then configure the palette and scope.</p>
     </div>
 
-    <div style="background:#ffffff; border:1px solid #dde5ea; border-radius:12px; padding:18px; margin-bottom:16px;">
+    <div style="background:#ffffff; border:1px solid #dde5ea; border-radius:12px; padding:10px; margin-bottom:16px; text-align:center;">
+      <a href="#overview" style="display:inline-block; text-decoration:none; color:#0f3a37; font-weight:700; font-size:14px; padding:10px 16px; border:1px solid #d4e1e0; border-radius:8px; margin:4px; background:#ecf7f5;">Screenshots</a>
+      <a href="#feature" style="display:inline-block; text-decoration:none; color:#0f3a37; font-weight:700; font-size:14px; padding:10px 16px; border:1px solid #d4e1e0; border-radius:8px; margin:4px; background:#ffffff;">Features</a>
+      <a href="#faq" style="display:inline-block; text-decoration:none; color:#0f3a37; font-weight:700; font-size:14px; padding:10px 16px; border:1px solid #d4e1e0; border-radius:8px; margin:4px; background:#ffffff;">FAQs</a>
+      <a href="#releases" style="display:inline-block; text-decoration:none; color:#0f3a37; font-weight:700; font-size:14px; padding:10px 16px; border:1px solid #d4e1e0; border-radius:8px; margin:4px; background:#ffffff;">Releases</a>
+    </div>
+
+    <div id="overview" style="background:#ffffff; border:1px solid #dde5ea; border-radius:12px; padding:18px; margin-bottom:16px;">
       <div style="display:inline-block; background:#e7f4f2; color:#0f766e; border-radius:999px; font-size:12px; font-weight:700; padding:5px 10px; margin-bottom:8px;">STEP 1 - RESULT</div>
       <h3 style="margin:0 0 8px; font-size:30px; color:#0f3a37;">Delivery Lines Highlighted Automatically</h3>
-      <p style="margin:0 0 12px; font-size:20px; line-height:1.45; color:#5b6470;">Duplicate product lines in Delivery operations are grouped with color backgrounds for quick visual verification.</p>
+      <p style="margin:0 0 20px; font-size:20px; line-height:1.45; color:#5b6470;">Duplicate product lines in Delivery operations are grouped with color backgrounds for quick visual verification.</p>
       <img src="./assets/screenshots/delivery_view.png" alt="Delivery View" style="display:block; width:100%; max-width:100%; height:auto; border-radius:10px; border:1px solid #e8ecef;" />
     </div>
 
     <div style="background:#ffffff; border:1px solid #dde5ea; border-radius:12px; padding:18px; margin-bottom:16px;">
       <div style="display:inline-block; background:#e7f4f2; color:#0f766e; border-radius:999px; font-size:12px; font-weight:700; padding:5px 10px; margin-bottom:8px;">STEP 2 - RESULT</div>
       <h3 style="margin:0 0 8px; font-size:30px; color:#0f3a37;">Invoice Lines Follow the Same Color Logic</h3>
-      <p style="margin:0 0 12px; font-size:20px; line-height:1.45; color:#5b6470;">The same duplicate-line detection can be applied to invoice lines when enabled in scope settings.</p>
+      <p style="margin:0 0 20px; font-size:20px; line-height:1.45; color:#5b6470;">The same duplicate-line detection can be applied to invoice lines when enabled in scope settings.</p>
       <img src="./assets/screenshots/invoice_view.png" alt="Invoice View" style="display:block; width:100%; max-width:100%; height:auto; border-radius:10px; border:1px solid #e8ecef;" />
     </div>
 
     <div style="background:#ffffff; border:1px solid #dde5ea; border-radius:12px; padding:18px; margin-bottom:16px;">
       <div style="display:inline-block; background:#e7f4f2; color:#0f766e; border-radius:999px; font-size:12px; font-weight:700; padding:5px 10px; margin-bottom:8px;">STEP 3 - NAVIGATION</div>
       <h3 style="margin:0 0 8px; font-size:30px; color:#0f3a37;">Open Line Color Menus from Settings</h3>
-      <p style="margin:0 0 12px; font-size:20px; line-height:1.45; color:#5b6470;">The module exposes a dedicated Line Color menu in Settings so administrators can manage everything from one place.</p>
+      <p style="margin:0 0 20px; font-size:20px; line-height:1.45; color:#5b6470;">The module exposes a dedicated Line Color menu in Settings so administrators can manage everything from one place.</p>
       <img src="./assets/screenshots/menu_items.png" alt="Menu Items" style="display:block; width:100%; max-width:100%; height:auto; border-radius:10px; border:1px solid #e8ecef;" />
     </div>
 
     <div style="background:#ffffff; border:1px solid #dde5ea; border-radius:12px; padding:18px; margin-bottom:16px;">
       <div style="display:inline-block; background:#e7f4f2; color:#0f766e; border-radius:999px; font-size:12px; font-weight:700; padding:5px 10px; margin-bottom:8px;">STEP 4 - CONFIGURATION</div>
       <h3 style="margin:0 0 8px; font-size:30px; color:#0f3a37;">Define Your Color Palette</h3>
-      <p style="margin:0 0 12px; font-size:20px; line-height:1.45; color:#5b6470;">Set sequence and color values (background, border, hover) to match your team preference and readability needs.</p>
+      <p style="margin:0 0 20px; font-size:20px; line-height:1.45; color:#5b6470;">Set sequence and color values (background, border, hover) to match your team preference and readability needs.</p>
       <img src="./assets/screenshots/line_colors_conf.png" alt="Line Colors Config" style="display:block; width:100%; max-width:100%; height:auto; border-radius:10px; border:1px solid #e8ecef;" />
     </div>
 
     <div style="background:#ffffff; border:1px solid #dde5ea; border-radius:12px; padding:18px; margin-bottom:16px;">
       <div style="display:inline-block; background:#e7f4f2; color:#0f766e; border-radius:999px; font-size:12px; font-weight:700; padding:5px 10px; margin-bottom:8px;">STEP 5 - CONFIGURATION</div>
       <h3 style="margin:0 0 8px; font-size:30px; color:#0f3a37;">Control Scope by Document Type</h3>
-      <p style="margin:0 0 12px; font-size:20px; line-height:1.45; color:#5b6470;">Enable or disable coloring for Sales, Purchase, Invoice, and each inventory operation type independently.</p>
+      <p style="margin:0 0 20px; font-size:20px; line-height:1.45; color:#5b6470;">Enable or disable coloring for Sales, Purchase, Invoice, and each inventory operation type independently.</p>
       <img src="./assets/screenshots/scope_config.png" alt="Scope Config" style="display:block; width:100%; max-width:100%; height:auto; border-radius:10px; border:1px solid #e8ecef;" />
     </div>
 
-    <div style="background:#ffffff; border:1px solid #dde5ea; border-radius:12px; padding:18px; margin-bottom:16px;">
+    <div id="feature" style="background:#ffffff; border:1px solid #dde5ea; border-radius:12px; padding:18px; margin-bottom:16px;">
       <h3 style="margin:0 0 10px; font-size:32px; color:#0f3a37;">Feature Highlights</h3>
       <ul style="margin:0; padding-left:22px; color:#4b5563; font-size:20px; line-height:1.6;">
         <li>Configurable palette: background, border, and hover color per group.</li>
         <li>Configurable scope by document type.</li>
         <li>Separate stock operation controls: Delivery, Receipt, Internal Transfer.</li>
         <li>Stable color grouping for duplicate products inside each document.</li>
+      </ul>
+    </div>
+
+    <div id="faq" style="background:#ffffff; border:1px solid #dde5ea; border-radius:12px; padding:18px; margin-bottom:16px;">
+      <h3 style="margin:0 0 12px; font-size:32px; color:#0f3a37;">FAQs</h3>
+      <p style="margin:0 0 10px; font-size:20px; color:#4b5563;"><strong>Q:</strong> Does it work for both Community and Enterprise?</p>
+      <p style="margin:0 0 16px; font-size:19px; color:#5b6470;"><strong>A:</strong> Yes, Odoo 19 Community and Enterprise are both supported.</p>
+      <p style="margin:0 0 10px; font-size:20px; color:#4b5563;"><strong>Q:</strong> Can I enable colors only for Delivery and not Invoices?</p>
+      <p style="margin:0; font-size:19px; color:#5b6470;"><strong>A:</strong> Yes, the Scope configuration lets you enable each document type independently.</p>
+    </div>
+
+    <div id="releases" style="background:#ffffff; border:1px solid #dde5ea; border-radius:12px; padding:18px; margin-bottom:16px;">
+      <h3 style="margin:0 0 12px; font-size:32px; color:#0f3a37;">Releases</h3>
+      <p style="margin:0 0 8px; font-size:20px; color:#4b5563;"><strong>v19.0.1.0.0</strong> - Initial marketplace release</p>
+      <ul style="margin:0; padding-left:22px; color:#5b6470; font-size:19px; line-height:1.6;">
+        <li>Duplicate line coloring across supported documents.</li>
+        <li>Configurable palette and configurable scope.</li>
+        <li>Dedicated Settings menu for Line Color administration.</li>
       </ul>
     </div>
 
