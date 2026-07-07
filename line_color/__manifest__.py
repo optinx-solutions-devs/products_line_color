@@ -16,7 +16,7 @@
     "maintainer": "optindev",
     "website": "https://www.optinsolutions.com",
     "support": "optinassist@gmail.com",
-    "price": 9.5,
+    "price": 5.5,
     "currency": "USD",
     "license": "LGPL-3",
     "depends": ["base"],
