@@ -15,8 +15,8 @@
     "author": "Optin Solutions",
     "website": "https://www.optinsolutions.com",
     "support": "optinassist@gmail.com",
-    "price": 5.5,
-    "currency": "USD",
+    #"price": 5.5,
+    #"currency": "USD",
     "license": "LGPL-3",
     "depends": ["base"],
     "data": [
